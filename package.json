@@ -1,0 +1,16 @@
+{
+  "name": "mr-task-scheduler",
+  "version": "0.0.1",
+  "description": "A configurable cron-like task scheduler",
+  "main": "index.js",
+  "private" : true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jesse Hazel",
+  "license": "ISC",
+  "dependencies": {
+    "node-schedule": "^1.2.3",
+    "node-watch": "^0.5.5"
+  }
+}

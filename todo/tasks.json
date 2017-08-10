@@ -1,0 +1,29 @@
+[
+    {
+        "name" : "Test cron style task",
+        "exec" : "node ./tasks/test/index.js",
+        "interval" : "* * * * *",
+        "onSuccess" : "",
+        "onFail" : ""
+    },
+    {
+        "name" : "Test object literal style task",
+        "exec" : "node ./tasks/test/index.js",
+        "interval" : {
+            "second": 10
+        },
+        "onSuccess" : "",
+        "onFail" : "",
+        "author" : "Jesse Hazel"
+    },
+    {
+        "name": "Test object literal style task",
+        "exec": "node ./tasks/test/index.js",
+        "interval": {
+            "second": 20
+        },
+        "onSuccess": "",
+        "onFail": "",
+        "author": "Jesse Hazel"
+    }
+]
