@@ -1,17 +1,4 @@
-# mr-task-scheduler
-A configurable cron-like task scheduler. Take the guesswork out of having to manually edit crontab everytime you need to schedule a new task. Execute callbacks when a task succeeds/fails.
-
-Install:
-`npm install`
-
-
-Setting up tasks:
-A minimum task looks like the following:
-```    {
-        "name" : "Test cron style task",
-        "exec" : "",
-        "interval" : "* * * * *",
-        "onSuccess" : "",# Mr. Task Scheduler
+# Mr. Task Scheduler
 A simple configurable cron-like task scheduler written in Node. Take the guesswork out of having to manually edit crontab everytime you need to schedule a new task. See what the response and execution time of each task was. Execute callbacks when a task succeeds/fails. No coding required to implement/change task schedule. This is version 0.0.1 and highly experimental at the moment.
 
 #### Install:
@@ -56,11 +43,3 @@ Are executed by `execFile()` and can be anything that is able to be executed on 
  * Build a front end gui
  * Switch logging(and maybe task list?) to an actual database like mongo
  * Investigate fault tolerance options. Heartbeat server?
-        "onFail" : ""
-    }```
-    
-`interval` can be a string with cron style syntax or it can use the object literal syntax that node-schedule supports: https://github.com/node-schedule/node-schedule#recurrencerule-properties
-
-
-Tasks:
-Are executed by `execFile()` and can be anything that is able to be executed on the command line.
