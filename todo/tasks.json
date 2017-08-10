@@ -1,29 +1,27 @@
 [
     {
         "name" : "Test cron style task",
-        "exec" : "node ./tasks/test/index.js",
+        "exec" : "node ./tasks/example/index.js",
         "interval" : "* * * * *",
         "onSuccess" : "",
         "onFail" : ""
     },
     {
         "name" : "Test object literal style task",
-        "exec" : "node ./tasks/test/index.js",
+        "exec" : "node ./tasks/example-delay/index.js",
         "interval" : {
-            "second": 10
-        },
-        "onSuccess" : "",
-        "onFail" : "",
-        "author" : "Jesse Hazel"
-    },
-    {
-        "name": "Test object literal style task",
-        "exec": "node ./tasks/test/index.js",
-        "interval": {
             "second": 20
         },
+        "onSuccess" : "",
+        "onFail" : ""
+    },
+    {
+        "name": "Test object literal style task that will fail",
+        "exec": "node ./tasks/example-failing/index.js",
+        "interval": {
+            "second": 40
+        },
         "onSuccess": "",
-        "onFail": "",
-        "author": "Jesse Hazel"
+        "onFail": ""
     }
 ]
