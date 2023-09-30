@@ -1,3 +1,5 @@
+> Archive notes: for some weird reason I used to be obsessed with the concept of a simple monolithic configuration driven schedular to run various tasks 😵‍💫. I did actually use a more fleshed out version of this in production to run various scrapers at a previous job. But shortly after, I learned Kubernetes and you can imagine what happened next.
+
 # Mr. Task Scheduler
 A simple configurable cron-like task scheduler written in Node. Take the guesswork out of having to manually edit crontab everytime you need to schedule a new task. See what the response and execution time of each task was. Execute callbacks when a task succeeds/fails. No coding required to implement/change task schedule. This is version 0.0.1 and highly experimental at the moment.
 
